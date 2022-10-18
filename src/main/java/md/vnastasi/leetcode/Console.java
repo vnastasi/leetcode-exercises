@@ -19,6 +19,11 @@ public final class Console {
         return Arrays.stream(SCANNER.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
     }
 
+    public static String readString(String message) {
+        System.out.print(message + ": ");
+        return SCANNER.nextLine();
+    }
+
     public static void write(String format, Object... args) {
         System.out.printf(format, args).println();
     }
